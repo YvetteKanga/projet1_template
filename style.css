@@ -1,0 +1,712 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,300;0,400;0,700;1,800&display=swap');
+
+header
+{
+    height: auto;
+    padding: 10px 0;
+    background-color: white;
+    position: fixed;
+    width: 100%;
+    z-index: 999;
+}
+
+/* ------icon------ */
+header i.icon
+{
+    position: absolute;
+    top:30px;
+    right: 50px;
+    z-index: 10;
+    display: none;
+    color: white;
+}
+
+/* --------header-------- */
+header i.icon
+{
+    color: black;
+}
+header i.icon:hover
+{
+    color: rgb(71, 182, 71);
+}
+header .name_site
+{
+    position: relative;
+    top: 10px;
+    font-size: 1.7em;
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+}
+header nav .nav-list
+{
+    /* line-height: 5px; */
+    padding: 0;
+    list-style: none;
+    line-height: normal;
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 0;
+}
+header nav .nav-list .list a
+{
+    display: block;
+    padding: 15px 0;
+    margin: 9px 0;
+    font-size: 0.9em;
+    text-decoration: none;
+    font-family: 'Raleway';
+    color: black;
+    transition: all 0.3s ease-in-out;
+}
+header nav .nav-list .search
+{
+    position: relative;
+    top: -5px;
+}
+header nav .nav-list .search .list a i.fa
+{
+    position: absolute;
+    text-align: center;
+    color: rgb(71, 182, 71);
+    padding-top: 9px;
+}
+header nav .nav-list .search .list a i
+{
+    font-size: 1.1em;
+    width: 35px;
+    height: 35px;
+    background-color: white;
+}
+header nav .nav-list .list a:hover
+{
+    color: rgb(100, 100, 100);
+}
+
+/* ---------DROP DOWN----- */
+header nav ul ul
+{
+    background-color: white;
+    /* border: 1px solid black; */
+    /* border-radius: 10px; */
+    width: 190px;
+    position: absolute;
+    top: 100px;
+    left: 450px;
+    transition: top 0.5s;
+    opacity: 0;
+    visibility: hidden;
+}
+header nav ul ul.drop-down
+{
+    padding: 0;
+}
+header nav ul ul li.list-down a
+{
+    padding: 0 !important;
+    margin: 0 !important;
+    color: rgb(172, 172, 172) !important;
+    position: relative;
+    left: 10px;
+    transition: left 0.5s;
+}
+header nav ul ul li.list-down a:hover
+{
+    position: relative;
+    left: 20px;
+    color: rgb(71, 182, 71) !important;
+}
+header nav ul ul .list-down
+{
+    color: rgb(172, 172, 172);
+    width: 190px;
+    list-style: none;
+    position: relative;
+    padding-right: 0;
+    padding: 10px 15px;
+    border-bottom: 1px solid rgb(172, 172, 172);
+}
+header nav ul ul .list-down:hover
+{
+    color: rgb(48, 128, 48);
+}
+header nav ul ul .list-down:last-child
+{
+    border-bottom: none;
+}
+
+header nav ul li:hover > ul
+{
+    top: 55px;
+    opacity: 1;
+    visibility: visible;
+}
+/* ---------DROP DOWN SM----- */
+
+/* screen md */
+@media (max-width:1203px) 
+{
+    header nav ul li:hover > ul
+    {
+        position: absolute;
+        left: 390px;
+    }
+}
+/* screen md */
+@media (max-width:995px) 
+{
+    header nav ul li:hover > ul
+    {
+        position: absolute;
+        left: 270px;
+    }
+}
+/* screen sm */
+@media (max-width:800px) 
+{
+    header nav ul li:hover > ul
+    {
+        position: absolute;
+        left: 270px;
+    }
+}
+/* screen xs */
+@media (max-width : 780px) 
+{
+
+    header i.icon
+    {
+        display: block;
+        top: 14px;
+    }
+    header nav .nav-list
+    {
+        display: none;  
+    }
+    header
+    {
+        height: auto;
+        padding: 10px 0;
+    }
+    header nav ul li:hover > ul
+    {
+        top: 180px;
+        left: 120px;
+    }
+}
+/* ------overlay------ */
+.carousel-inner .carousel-caption
+{
+    position: absolute;
+    top: 280px;
+    transition: top 0.5s;
+}
+.carousel-inner .carousel-caption h5
+{
+    font-size: 1.1em;
+}
+.carousel-inner .carousel-caption h1
+{
+    font-size: 3em;
+    font-weight: normal;
+}
+.carousel-inner .carousel-caption .btn
+{
+    margin: 0 10px;
+}
+.carousel-inner .carousel-caption .btn-success
+{
+    background-color: rgba(255, 255, 255, 0);
+    border: 2px solid white;
+    border-radius: 55px;
+}
+.carousel-inner .carousel-caption .btn-success:hover
+{
+    color: rgb(48, 128, 48);
+    background-color: white;
+}
+.carousel-inner .carousel-caption .btn-dark
+{
+    color: rgb(48, 128, 48);
+    background-color: white;
+    border: 2px solid white;
+    border-radius: 55px;
+}
+.carousel-inner .carousel-caption .btn-dark:hover
+{
+    color: white;
+    background-color: rgb(48, 128, 48);
+    border: 2px solid rgb(48, 128, 48);
+}
+@media (max-width: 1020px) 
+{
+    .carousel-inner .carousel-caption
+    {
+        position: absolute;
+        top: 180px;
+    }
+}
+@media (max-width: 780px) 
+{
+    .carousel-inner .carousel-caption
+    {
+        position: absolute;
+        top: 100px;
+    }
+}
+/* ------circle---- */
+.circle 
+{
+    position: relative;
+    top: -30px;
+    left: 50%;
+    width: 60px;
+    height: 60px;
+    border: 1px solid rgb(48, 128, 48);
+    background-color: rgb(48, 128, 48);
+    border-radius: 50%;
+}
+.circle i
+{
+    position: absolute;
+    top: 20px;
+    left: 19px;
+    text-align: center;
+    font-size: 1.3em;
+    color: wheat;
+}
+/* ------section------- */
+
+section .section_block
+{
+    height: 470px;
+    border-bottom: 5px solid rgb(221, 221, 221);
+    padding-top: 50px;
+    /* border: 1px solid black; */
+}
+@media (max-width: 774px) 
+{
+    section .section_block
+    {
+        height: 750px;
+    }
+    
+}
+section .about_head h6
+{
+    color: rgb(48, 128, 48);
+}
+section .about_head h1
+{
+    font-weight: bold;
+}
+section .about_img
+{
+    display: inline-flex;
+    margin: 15px 0;
+}
+@media (max-width: ) {
+    
+}
+section .about_img h4
+{
+    margin: 0 10px;
+}
+section .learn_more
+{
+    margin-top: 10px;
+    width: 150px;
+    transition: 0.5s;
+    height: 40px;
+    padding: 5px 5px;
+    background-color: rgb(48, 128, 48);
+    border-radius: 25px;
+}
+section .learn_more a
+{
+    padding: 5px 10px;
+    color: white;
+    text-decoration: none;
+}
+section .learn_more:hover 
+{
+    width: 160px;
+}
+section .about_text
+{
+    margin-top: 30px;
+    font-size: 1em;
+    color: rgb(110, 110, 110);
+}
+/* -----section info-------- */
+section.info
+{
+    margin-top: 70px;
+    height: 230px;
+    transition: height 0.5s;
+}
+@media (max-width: 770px) 
+{
+    section.info
+    {
+        height: 470px;
+    }
+}
+section.info .info_one
+{
+    display: flex;
+}
+section.info .info_one img
+{
+    height: 50px;
+    width: 50px;
+    margin-right: 30px;
+}
+section.info .info_one .info_desc h4
+{
+    font-size: 1.0em;
+    /* line-height: 5px; */
+}
+section.info .info_one .info_desc p
+{
+    font-size: 0.9em;
+}
+section.info .info_one .info_desc a
+{
+    text-decoration: none;
+    font-weight: normal;
+    color: black;
+    transition: color 0.5s;
+}
+section.info .info_one .info_desc a:hover
+{
+    color: rgb(48, 128, 48);
+}
+/*  */
+.section_suite
+{
+    background-image: url('images/slide-02.jpg');
+    background-size: cover;
+    height: 400px;
+}
+.section_suite .sub
+{
+    position: relative;
+    top: 100px;
+    text-align: center;
+    color: white;
+}
+.section_suite .sub .sub_ent h2
+{
+    font-size: 2.5em;
+}
+.section_suite .sub .sub_body p
+{
+    margin: 20px 0;
+}
+.section_suite .sub .sub_input input
+{
+    border: 2px solid white;
+    width: 500px;
+    height: 40px;
+    border-radius: 25px;
+    background-color: rgba(255, 255, 255, 0) ;
+}
+.section_suite .sub .sub_input input[type="search"]
+{
+    margin-right: 10px;
+}
+/* ::placeholder
+{
+    padding-right: 10px;
+    color: white;
+} */
+.section_suite .sub .sub_input button
+{
+    border-radius: 25px;
+    height: 40px;
+    background-color: white;
+    transition: all 0.8s;
+    border: none;
+    padding: 0 10px;
+    color: rgb(48, 128, 48);
+    margin-top: 20px;
+}
+.section_suite .sub .sub_input button:hover
+{
+    background-color: rgb(48, 128, 48);
+    color: white;
+}
+
+/* -----projects----- */
+section.projects
+{
+    height: 800px;
+    margin-top: 100px;
+}
+@media (max-width:770px) 
+{
+    section.projects
+    {
+        height: 1200px;
+    }   
+}
+
+section.projects .project h6
+{
+    color: rgb(48, 128, 48);
+}
+section.projects .project h2
+{
+    font-weight: bold;
+    font-size: 1.8em;
+    margin-bottom: 70px;
+}
+section.projects .project ul
+{
+    padding: 0;
+}
+section.projects .project ul li
+{
+    list-style: none;
+    height: 50px;
+    font-weight: bold;
+    color: rgb(163, 163, 163);
+}
+section.projects .project ul li:hover
+{
+    color: rgb(65, 133, 65);
+    cursor: pointer;
+}
+section.projects .project_pic .project_img img
+{
+    /* border:1px solid black; */
+    width: 260px;
+    transition: width 0.5s ease-in-out;
+    margin-bottom: 30px;
+}
+section.projects .project_pic .project_img img:hover
+{
+    filter: saturate(3.5) blur(2px);
+}
+@media (max-width: 1215px) 
+{
+    section.projects .project_pic .project_img img
+    {
+        width: 195px;
+        margin-bottom: 20px;
+        margin-right: 10px;
+    }
+}
+@media (max-width: 995px) 
+{
+    section.projects .project_pic .project_img img
+    {
+        width: 170px;
+        margin-bottom: 20px;
+        margin-right: 10px;
+    }
+}
+@media (max-width: 774px) 
+{
+    section.projects .project ul
+    {
+        display: inline-flex;
+    } 
+    section.projects .project ul li
+    {
+        margin: 0 6px;
+    }
+    section.projects .project_pic .project_img img
+    {
+        width: 250px;
+        margin-right: 20px;
+    }
+}
+@media (max-width:587px) 
+{
+    section.projects
+    {
+        height: 2600px;
+    }   
+}
+@media (max-width: 584px) 
+{
+    section.projects .project_pic .project_img img
+    {
+        width: 300px;
+        margin-bottom: 20px;
+        transform: translate(70px);
+        /* margin-right: 10px; */
+    }
+}
+@media (max-width: 497px) 
+{
+    section.projects .project_pic .project_img img
+    {
+        /* width: 400px;
+        margin-bottom: 20px; */
+        transform: translate(40px);
+        /* margin-right: 10px; */
+    }
+}
+
+/* -----section digit----- */
+section.digit
+{
+    background-image: url('images/slide-03.jpg');
+    background-position: center;
+    background-size: cover;
+    padding-bottom: 100px;
+}
+section.digit .digit_ent 
+{
+    color: white;
+}
+section.digit .digit_ent .digit_info
+{
+    text-align: center;
+}
+section.digit .digit_ent .digit_info h6
+{
+    margin: 30px;
+}
+section.digit .digit_ent .digit_info h2
+{
+    margin-bottom: 30px;
+}
+section.digit .digit_ent .digit_body
+{
+    text-align: center;
+}
+@media (max-width:564px) 
+{
+    section.digit .digit_ent .digit_body .digit_img img
+    {
+        width: 50%;
+    }
+}
+@media (max-width:764px) 
+{
+    section.digit .digit_ent .digit_body .digit_img img
+    {
+        width: 50%;
+    }
+}
+@media (max-width:997px) 
+{
+    section.digit .digit_ent .digit_body .digit_img img
+    {
+        width: 80%;
+    }
+}
+@media (max-width:1205px) 
+{
+    section.digit .digit_ent .digit_body .digit_img img
+    {
+        width: 50%;
+    }
+}
+
+/* ------section form------ */
+section.sect_form
+{
+    background-image: url('images/dotted-map-bg.png');
+    background-size: cover;
+}
+section.sect_form .sect_cont
+{
+    margin: 50px 0;
+}
+section.sect_form .sect_cont h6
+{
+    color: rgb(65, 133, 65);
+}
+section.sect_form .sect_cont h2
+{
+    font-family: 'Raleway';
+    font-weight: bold;
+}
+section.sect_form form
+{
+    margin: 50px 0;
+}
+section.sect_form ul
+{
+    padding: 0;
+}
+section.sect_form ul li
+{
+    display: block;
+    list-style: none;
+    margin: 30px 10px;
+    font-weight: bold;
+}
+section.sect_form form input
+{
+    width: 100%;
+    margin: 20px 0;
+    height: 50px;
+    border: 1px solid gray;
+}
+section.sect_form form textarea
+{
+    width: 100%;
+    margin: 20px 0;
+    border: 1px solid gray;
+    transform: translate(30px);
+}
+section.sect_form form button
+{
+    width: 250px;
+    height: 60px;
+    border-radius: 40px;
+    font-weight: bold;
+    transform: translate(20px);
+}
+/* ----------footer-------- */
+footer
+{
+    background-image: url('images/banner-bg.jpg');
+    background-size: cover;
+    color: white;
+    height: 200px;
+    padding:  50px 0;
+}
+footer .copy
+{
+    transform: translateY(30px);
+}
+footer .copy p
+{
+    margin: 0 20px;
+}
+footer .link
+{
+    float: right;
+    display: inline-flex;
+}
+footer .link .facebook, .twitter, .linkedin, .globe
+{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: white;
+    margin: 0 5px;
+}
+footer .link i.fa
+{
+    color: rgb(65, 133, 65);
+    transition: color 0.3s ease-in-out;
+    transform: translate(8px, 2px);
+}
+footer .link i.fa:hover
+{
+    color: white;
+}
+footer .link:hover .facebook:hover, .twitter:hover, .linkedin:hover, .globe:hover
+{
+    background-color: rgb(65, 133, 65);
+}
+/* -----footer-------- */
